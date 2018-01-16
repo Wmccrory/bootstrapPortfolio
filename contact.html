@@ -30,9 +30,9 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="index.html">about me<span class="sr-only">(current)</span></a></li>
+	        <li><a href="index.html">about me</a></li>
 	        <li><a href="portfolio.html">portfolio</a></li>
-	        <li><a href="contact.html">contact me</a></li>
+	        <li class="active"><a href="contact.html">contact me<span class="sr-only">(current)</span></a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -51,16 +51,25 @@
 
 		<!-- Main content -->
 			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7" id="mainContent">
-				<h1>About Me</h1>
+				<h1>Get in touch</h1>
 				<hr>
 
-				<img src="images/profile.png" class="pull-left" class="img-rounded" alt="Picture of me">
-
-				<div class="text-left">
-					<p>Born and raised in Austin, a true native son of Texas. Web developer with 1 week experience, one might even call him a "webmaster". However, Will prefers the moniker "technomancer". If you have need for someone who can make a div element float or make a link turn a different color when you hover your mouse over it, you will find no better. A firm believer that the great should never be constrained by the small, freelance work is preferred.</p>
-
-					<p>With all the technobabble above, you could be left with the impression that coding is the only trick Will has up his sleeve. It is an easy mistake to make if judging solely based on this Ozymandias-esque display of html power. However, there are a plethora of other skills beneath the surface. You may need to dig deep to find them, <a href="https://i.pinimg.com/736x/b6/98/e8/b698e8aede308208579ec7cda91b1836--dankest-memes-dog-memes.jpg">but beware..</a></p>
-				</div>
+				<form>
+					<div class="form-group">
+						<label for="contactName">Name</label>
+						<input type="text" class="form-control" id="contactName" placeholder="Name...">
+					</div>
+					<div class="form-group">
+						<label for="contactEmail">Email</label>
+						<input type="text" class="form-control" id="contactEmail" placeholder="email...">
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<textarea class="form-control" rows="4" id="subject" placeholder="How much is the check for?"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				
 			</div>
 
 		<!-- Spacer -->
